@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>團隊介紹</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('背景.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+			font-family: '源泉圓體', Arial, sans-serif;
+        }
+
+        .team-table {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 创建5列 */
+            grid-template-rows: repeat(2, 1fr); /* 创建2行 */
+            gap: 20px; /* 表格之间的间距 */
+            padding: 20px; /* 表格内边距 */
+            width: 80%; /* 表格宽度 */
+            margin: 0 auto; /* 居中显示 */
+        }
+
+        .team-member {
+			font-family: '源泉圓體', Arial, sans-serif;
+            background-color: rgba(255, 255, 255, 0.8); /* 透明白色背景 */
+            padding: 20px; /* 成员格内边距 */
+            text-align: center; /* 文字居中 */
+			font-family: 'Source Sans Pro', Arial, sans-serif;
+			animation: floatIn 1s ease forwards;
+			border-radius: 15px;
+        }
+		
+
+		
+        .team-member img {
+            width: 100px; /* 头像宽度 */
+            height: 100px; /* 头像高度 */
+            border-radius: 50%; /* 圆形头像 */
+            margin-bottom: 10px; /* 头像下边距 */
+        }
+		
+		@keyframes floatIn {
+			from {
+				transform: translateY(100px); /* 起始位置，向下偏移 */
+				opacity: 0; /* 初始透明度 */
+			}
+			to {
+				transform: translateY(0); /* 最终位置，无偏移 */
+				opacity: 1; /* 最终透明度 */
+			}
+		}
+
+    </style>
+</head>
+<body>
+    <div class="team-table">
+        <!-- 第一行 -->
+        <div class="team-member">
+            <img src="小Y.jpg" alt="成员1">
+            <p>林怡先 地理學博士</p><p>銘傳大學觀光系助理教授</p>
+			<p>專長絕對沒有看風水這個項目，喜歡到處趴趴走及觀察各種人地互動特徵</p>
+        </div>
+        <div class="team-member">
+            <img src="小別.jpg" alt="成员2">
+            <p>曾品瑄</p><p>銘傳大學數位媒體設計系二年級</p>
+			<p>要探勘楓樹坑步道，山上看得到銘傳大學，可以找找看喔！</p>
+        </div>
+        <div class="team-member">
+            <img src="小C.jpg" alt="成员3">
+            <p>呂平雲</p><p>銘傳大學觀光事業學系三年級</p>
+			<p>主要負責探勘長庚養生文化村，裡面有很多好玩的地方等你來發掘</p>
+        </div>
+        <div class="team-member">
+            <img src="小許.jpg" alt="成员4">
+            <p>許仲原</p><p>銘傳大學觀光事業學系三年級</p>
+			<p>現在肚子餓餓的～大家也要記得吃飯飯呦❤️</p>
+        </div>
+        <div class="team-member">
+            <img src="小爰.jpg" alt="成员5">
+            <p>黃爰鄞</p><p>銘傳大學數位媒體設計系二年級</p>
+			<p>主要探勘苗圃生態園區，裡面有很多種植物，小朋友可以仔細觀察喔！</p>
+        </div>
+        <!-- 第二行 -->
+        <div class="team-member">
+            <img src="小游.jpg" alt="成员6">
+            <p>游欣蓓</p><p>銘傳大學數位媒體設計系二年級</p>
+			<p>主要負責探勘苗圃生態園區，裡面有很多植物的幼苗，不妨邊走邊認識一下你不認識的幼苗吧～</p>
+        </div>
+        <div class="team-member">
+            <img src="小涵.jpg" alt="成员7">
+            <p>曾詠涵</p><p>銘傳大學數位媒體設計系二年級</p>
+			<p>主要負責探勘苗圃生態園區，裡面有很多你平常看到植物的幼苗，希望大家來的時候都可以學到很多新植物～</p>
+        </div>
+        <div class="team-member">
+            <img src="小菜.jpg" alt="成员8">
+            <p>蔡雨軒</p><p>銘傳大學商業設計系三年級</p>
+			<p>主要負責探勘楓樹坑步道，注意走上去要小心石子不要跌倒</p>
+        </div>
+        <div class="team-member">
+            <img src="小佳.jpg" alt="成员9">
+            <p>林佳歆</p><p>銘傳大學資訊工程系四年級</p>
+			<p>喜歡親近大自然，楓樹坑步道路上有非常多可愛的動物，大家假日可以去走走喔！</p>
+        </div>
+        <div class="team-member">
+            <img src="小君.jpg" alt="成员10">
+            <p>蕭育君</p><p>銘傳大學資訊工程系四年級</p>
+			<p>走訪楓樹坑時雖然沒看到漂亮的楓樹，但是有看到藏在樹林裡的落羽松喔！有人發現在哪裡嗎？</p>
+        </div>
+    </div>
+</body>
+</html>

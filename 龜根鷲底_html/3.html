@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景點介紹</title>
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: rgb(230, 245, 234); /* 背景顏色 */
+		}
+		
+		img {
+			display: block; /* 將圖片設置為區塊元素 */
+			margin: auto; /* 使用auto來水平居中 */
+			opacity: 0; /* 初始設置為透明 */
+			transition: opacity 2s ease-in-out; /* 使用過渡效果，持續2秒，以緩入緩出的方式變化 */
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<img id="fadingImage" src="地圖.png" usemap="#map1" alt="地圖" width="1630" height="931">
+
+    <map name="map1">
+        <area shape="rect" coords="50,50,325,150" href="page1.html" alt="區域1">
+        <area shape="rect" coords="450,730,725,825" href="page2.html" alt="區域2">
+		<area shape="rect" coords="1300,630,1590,750" href="page3.html" alt="區域3">
+    </map>
+	
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var fadingImage = document.getElementById('fadingImage');
+          fadingImage.style.opacity = '1'; /* 將透明度設置為1（完全不透明），將觸發過渡效果 */
+        });
+    </script>
+
+</body>
+</html>

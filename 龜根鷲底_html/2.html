@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊記</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('背景1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        #contentPhone {
+			width: 90vw; /* 使用vw设置宽度，相对于视窗宽度的50% */
+			height: 70vh; /* 使用vh设置高度，相对于视窗高度的25% */
+			background-image: url('遊1.jpg');
+			background-size: contain; /* 使用contain来确保背景图片完全包含在元素中 */
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: transform 0.5s;
+			cursor: pointer;
+		}
+
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <a id="angleleft"><i class="fas fa-angle-left fa-5x"></i></a>
+        <a id="angleright"><i class="fas fa-angle-right fa-5x"></i></a>
+        <div id="contentPhone"></div>
+    </div>
+
+    <script>
+        const contentPhone = document.getElementById('contentPhone');
+        let isFlipped = false;
+
+        function flipImage() {
+            if (isFlipped) {
+                contentPhone.style.transform = 'translate(-50%, -50%)';
+                contentPhone.style.backgroundImage = `url('遊1.jpg')`;
+            } else {
+                contentPhone.style.transform = 'translate(-50%, -50%) scale(-1, 1)';
+                contentPhone.style.backgroundImage = `url('遊2.jpg')`;
+            }
+            isFlipped = !isFlipped;
+        }
+
+        contentPhone.addEventListener('click', flipImage);
+    </script>
+</body>
+</html>

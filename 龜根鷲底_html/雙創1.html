@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<audio autoplay="autoplay" controls="SmallConsole"loop="loop" cloudAudio.volume = 1 preload="auto"
+       src="背景音樂.mp3">
+     
+	</audio>
+
+    <title>龜根鷲底</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('背景.png'); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+			overflow: hidden;
+        }
+		
+
+        .cloud {
+            width: 400vw; /* 使用vw設置寬度，相對於視窗寬度的25% */
+            height: 400vw; /* 自動調整高度以保持圖片的原始比例 */
+            position: absolute;
+            cursor: pointer;
+			animation: cloudAppear 2s ease-in-out;
+			overflow: hidden;
+        }
+		
+
+		@keyframes cloudAppear {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+        #cloud1 {
+            top: 9vh; /* 使用vh設置垂直位置，相對於視窗高度的10% */
+            left: 10vw; /* 使用vw設置水平位置，相對於視窗寬度的15% */
+            background-image: url('左上.png'); 
+            background-size: 20vw 20vh; /* 使用vw和vh設置背景大小 */
+            background-repeat: no-repeat;
+        }
+
+        #cloud2 {
+            top: 40vh; /* 使用vh設置垂直位置，相對於視窗高度的40% */
+            left: 20vw; /* 使用vw設置水平位置，相對於視窗寬度的30% */
+            background-image: url('左下.png'); 
+            background-size: 20vw 20vh;
+            background-repeat: no-repeat;
+        }
+
+        #cloud3 {
+            top: 16vh; /* 使用vh設置垂直位置，相對於視窗高度的20% */
+            left: 62vw; /* 使用vw設置水平位置，相對於視窗寬度的60% */
+            background-image: url('右上.png');
+            background-size: 20vw 20vh;
+            background-repeat: no-repeat;
+        }
+
+        #cloud4 {
+            top: 50vh; /* 使用vh設置垂直位置，相對於視窗高度的60% */
+            left: 70vw; /* 使用vw設置水平位置，相對於視窗寬度的80% */
+            background-image: url('右下.png'); 
+            background-size: 18vw 18vh;
+            background-repeat: no-repeat;
+        }
+		#sun {
+		width: 100px; /* 设置太阳的宽度 */
+		height: 100px; /* 设置太阳的高度 */
+		background-image: url('泰太陽.png'); /* 替换 '太阳.png' 为你的太阳图像文件路径 */
+		background-size: cover;
+		position: absolute;
+		top: 50px; /* 设置太阳的垂直位置 */
+		left: 1500px; /* 设置太阳的水平位置 */
+		}	
+		.centered-image {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		#logo {
+			position: fixed;
+			top: 20px;
+			left: 50%;
+			transform: translate(-50%);
+			opacity: 1; /* 初始时完全透明 */
+			animation: logoAppear 2s ease-in-out;
+		}
+
+		@keyframes logoAppear {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	
+	
+
+    </style>
+</head>
+<body>
+	<div id="sun"></div>
+	<audio id="cloudAudio" autoplay="autoplay" cloudAudio.volume = 1 src="button04a.mp3"></audio>
+    <div class="cloud" id="cloud1">
+    </div>
+    <div class="cloud" id="cloud2">
+    </div>
+    <div class="cloud" id="cloud3">
+    </div>
+    <div class="cloud" id="cloud4">
+    </div>
+	<div id="logo">
+        <img src="字.png" alt="龜根鷲底"></div>
+	
+    <script>
+        const clouds = document.querySelectorAll('.cloud');
+		const cloudAudio = document.getElementById('cloudAudio');
+		
+
+		clouds.forEach((cloud, index) => {
+		cloud.addEventListener('click', () => {
+       
+			cloudAudio.play();
+        
+      
+        let targetUrl;
+        switch (index) {
+            case 0:
+                targetUrl = '1.html';
+                break;
+            case 1:
+                targetUrl = '2.html';
+                break;
+            case 2:
+                targetUrl = '3.html';
+                break;
+            case 3:
+                targetUrl = '4.html';
+                break;
+            default:
+                targetUrl = '雙創1.html';
+                break;
+        }
+        
+        // 导航到目标URL
+        window.location.href = targetUrl;
+    });
+});
+    </script>
+</body>
+</html>
