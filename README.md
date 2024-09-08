@@ -8,10 +8,9 @@
 <img src="https://github.com/JasmineLin1205/Cultural-and-Creative-Website/blob/e8cc45b2d0e12b0ba250a31411776d18307109a3/picture/%E5%90%89%E7%A5%A5%E7%89%A9%E4%BB%8B%E7%B4%B9.png" alt="page2" width="1000"/>
 
 ## 遊記
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://github.com/JasmineLin1205/Cultural-and-Creative-Website/blob/a1e28467c4e8fa9291d0d212637e8bd2b43f1f98/picture/%E9%81%8A%E8%A8%98.png" alt="page3" width="500"/>
-  <img src="https://github.com/JasmineLin1205/Cultural-and-Creative-Website/blob/a1e28467c4e8fa9291d0d212637e8bd2b43f1f98/picture/%E9%81%8A%E8%A8%982.png" alt="page4" width="500"/>
-</div>
+<img src="https://github.com/JasmineLin1205/Cultural-and-Creative-Website/blob/a1e28467c4e8fa9291d0d212637e8bd2b43f1f98/picture/%E9%81%8A%E8%A8%98.png" alt="page3" width="1000"/>
+<img src="https://github.com/JasmineLin1205/Cultural-and-Creative-Website/blob/a1e28467c4e8fa9291d0d212637e8bd2b43f1f98/picture/%E9%81%8A%E8%A8%982.png" alt="page4" width="1000"/>
+  
 點擊有翻轉特效
 
 ## 景點介紹
